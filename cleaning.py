@@ -5,11 +5,11 @@ import seaborn as sns
 import os
 import sys
 
-# Load the already-cleaned file
-df = pd.read_csv("Superstore_cleaned_last", encoding="latin1")
+#Load the already-cleaned file
+df = pd.read_csv("/Users/mostafa/Desktop/CV-Project/Superstore_cleaned_last.csv", encoding="latin1")
 
 # dates
-df["Order Date"] = pd.to_datetime(df["Order Date"], format="%Y-%m-%d")
+#df["Order Date"] = pd.to_datetime(df["Order Date"], format="%Y-%m-%d")
 df["Ship Date"] = pd.to_datetime(df["Ship Date"], format="%Y-%m-%d")
 
 # remove garbage characters
