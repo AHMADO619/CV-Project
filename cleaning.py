@@ -6,7 +6,7 @@ import os
 import sys
 
 # Load the already-cleaned file
-df = pd.read_csv("Superstore_cleaned_last", encoding="latin1")
+df = pd.read_csv("Superstore_cleaned_last2.csv", encoding="UTF-8")
 
 # dates
 df["Order Date"] = pd.to_datetime(df["Order Date"], format="%Y-%m-%d")
@@ -30,5 +30,5 @@ df = df.drop_duplicates()
 
 print(df.shape)
 
-# save the clean data
-df.to_csv("Superstore_cleaned_last2.csv", index=False)
+# # save the clean data
+# df.to_csv("Superstore_cleaned_last2.csv", index=False)
