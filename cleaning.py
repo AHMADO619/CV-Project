@@ -5,10 +5,10 @@ import seaborn as sns
 import os
 import sys
 
-# Load the already cleaned file
+# Load the already-cleaned file
 df = pd.read_csv("Superstore_cleaned_last", encoding="latin1")
 
-# fix the format of the dates
+# dates
 df["Order Date"] = pd.to_datetime(df["Order Date"], format="%Y-%m-%d")
 df["Ship Date"] = pd.to_datetime(df["Ship Date"], format="%Y-%m-%d")
 
