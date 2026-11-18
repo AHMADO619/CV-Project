@@ -1,9 +1,7 @@
-.venv/
-.venv-*/
 venv/
 __pycache__/
-*.py[cod]
 .ipynb_checkpoints/
-.env
 .DS_Store
-.vscode/
+old/
+*.joblib
+*.xlsx
